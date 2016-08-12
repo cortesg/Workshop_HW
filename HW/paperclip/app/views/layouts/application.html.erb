@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clipper</title>
+    <%= csrf_meta_tags %>
+	
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'clip.gif' %>
+  </head>
+
+ <nav>
+	 <%= link_to "Home", users_path %>
+	 <%= link_to "Upload Pic", new_user_path %>
+ </nav>
+ <h1>Clipper</h1>
+  <body>
+  <%= image_tag "clip.gif", :id => "background" %>
+    <%= yield %>
+  </body>
+</html>
