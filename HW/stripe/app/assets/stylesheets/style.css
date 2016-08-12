@@ -1,0 +1,41 @@
+/*nav {
+	background-color: red;
+}*/
+
+body {
+  /*CENTERS CONTENT*/
+/*  margin: 0 auto;
+  max-width: 50em;*/
+  /*SPACES TEXT*/
+/*  line-height: 1.5;
+  padding: 4em 1em;*/
+}
+
+h1 {
+	/*spaces text*/
+/*  margin-top: 1em;
+  padding-top: 1em;*/
+  text-align: center;
+  margin-top: 20%;
+  text-shadow: 3px 3px yellow;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 20%;
+}
+
+.pay {
+	text-align: center;
+	margin-top: 20%;
+}
+
+
+img {
+	position: fixed;		
+ 	width: 100%;		
+ 	height: 100%;		
+ 	top: 0;		
+ 	right: 0;		
+ 	z-index: -100;	
+}

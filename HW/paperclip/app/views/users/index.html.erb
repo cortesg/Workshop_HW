@@ -1,0 +1,8 @@
+<h1>All the files</h1>
+
+
+<% @user.each do |user| %>
+	<div id="pic_container">
+		<%= image_tag user.avatar.url(:medium) %>
+	</div>
+<% end %>
