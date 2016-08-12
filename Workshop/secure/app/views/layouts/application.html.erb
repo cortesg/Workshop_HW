@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Secure</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+
+  <body>
+  <nav>
+    <!-- not sure how to use link_to syntax -->
+    <% if session[:user_id] %>
+      <div id="homenavin">
+        <a href="/">Home</a>
+        <a href="/log-out">Log Out</a>
+      </div>
+    <% else %>
+      <div id="homenavout">
+        <!-- <a href="/">Home</a> --> <a href="/">Home</a>
+        <!-- <a href="/users/new">Sign Up</a>  --> <%= link_to 'Sign Up', new_user_path %>
+        <a href="/log-in">Sign In</a>
+      </div>
+    <% end %>
+  </nav>
+  	<%= flash[:notice] if flash[:notice] %>
+  	<%= flash[:error] if flash[:error] %>
+    <%= flash[:alert] if flash[:alert] %>
+    <%= yield %>
+  </body>
+</html>

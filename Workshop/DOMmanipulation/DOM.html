@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cortes DOM Manipulation</title>
+	</head>
+	<body>
+		<form name="ginosForm">   
+			<label for="date">Date:</label>   
+			<input type="text" 
+			 name="date" 
+			 class="yo"
+			 id="date" 
+			 placeholder="mm/dd/yy"
+			 onkeypress="keyPress()">
+			<input type="submit" 
+			 value="Submit" 
+			 onClick="dateValidator()"> 
+			<label for="username">Username:</label>  
+			<input type="text" 
+			 name="username"
+			 class="yo" 
+			 id="username"
+			 onkeypress="keyPress()">
+			<input 
+			 type="submit" 
+			 value="Submit" 
+			 onClick="userValidator()"> 
+			<label for="password">Password:</label>   
+			<input 
+			 type="password" 
+			 name="password" 
+			 class="yo"
+			 id="password" 
+			 placeholder="Must be '12345'"
+			 onkeypress="keyPress()">
+			<input 
+			 type="submit" 
+			 value="Submit" 
+			 onClick="passValidator()">   
+		</form>
+		<div id='curry'><h1>WHAT YOU TYPE WILL POP UP HERE</h1></div>
+		<script src="DOM.js"></script>
+	</body>
+</html>
