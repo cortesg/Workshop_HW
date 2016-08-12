@@ -1,0 +1,83 @@
+@import 'bourbon/bourbon';
+@import 'colors'; //indigo
+// @import 'partials/test'
+/* super dummy content below, beware of my design */
+
+
+//placeholder
+  %thick-line {   border: 10px solid black; }
+
+h1 {
+	color: indigo;
+	 @extend %thick-line;
+}
+.james {
+	h1 {
+		color: blue;
+		text-align: center;
+	}
+	h2 {
+		color: $color;
+		background: tint(orange, 50%);
+	}
+}
+
+@mixin opacity($opacity){
+	opacity: $opacity
+}
+
+@mixin black($opacity) {
+	background-color:black;
+	@include opacity($opacity);
+}
+
+@mixin white($opacity) {
+	background-color:white;
+	@include opacity($opacity);
+}
+
+
+body {
+	/*mixes a color with white*/ background-color: tint(blue, 35%);
+// /*mixes a color with black*/ background-color: shade(red, 70%);	
+}
+
+.black { @include black(.5); }
+.white { @include white(.5); }
+
+
+
+nav {
+  $color: blue;
+  $serif: times;
+  $sans-serif: arial;
+  ul {
+    color: $color;
+    font-family: $sans-serif;
+    background-color: white;
+  }
+  li {
+    background-color: none;
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    &:hover {
+    	color: red;
+    }
+  }
+}
+
+
+//extend
+$unit: 10px;
+.alert {   background-color: #010101;   width: 100px; }
+/*make a new class with alert's styles and more! */ .notice {   @extend .alert;   height: $unit* 10; color: orange; }
+//but this message wont appear in .css
+
+
+//loop
+  // @for $i from 1 through 100 {     .cell-#{$i} { width: 1% * $i; }   }
+  @for $i from 1 through 10 {     .cell-#{$i * 5} { width: 5% * $i; }   }
+
+
+

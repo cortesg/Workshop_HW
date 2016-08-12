@@ -1,0 +1,78 @@
+/* super dummy content below, beware of my design */
+h1 {
+  border: 10px solid black; }
+
+h1 {
+  color: indigo; }
+
+.james h1 {
+  color: blue;
+  text-align: center; }
+.james h2 {
+  color: indigo;
+  background: #ffd280; }
+
+body {
+  /*mixes a color with white*/
+  background-color: #5959ff; }
+
+.black {
+  background-color: black;
+  opacity: 0.5; }
+
+.white {
+  background-color: white;
+  opacity: 0.5; }
+
+nav ul {
+  color: blue;
+  font-family: arial;
+  background-color: white; }
+nav li {
+  background-color: none;
+  list-style: none;
+  display: inline-block;
+  margin: 10px; }
+  nav li:hover {
+    color: red; }
+
+.alert, .notice {
+  background-color: #010101;
+  width: 100px; }
+
+/*make a new class with alert's styles and more! */
+.notice {
+  height: 100px;
+  color: orange; }
+
+.cell-5 {
+  width: 5%; }
+
+.cell-10 {
+  width: 10%; }
+
+.cell-15 {
+  width: 15%; }
+
+.cell-20 {
+  width: 20%; }
+
+.cell-25 {
+  width: 25%; }
+
+.cell-30 {
+  width: 30%; }
+
+.cell-35 {
+  width: 35%; }
+
+.cell-40 {
+  width: 40%; }
+
+.cell-45 {
+  width: 45%; }
+
+.cell-50 {
+  width: 50%; }
+
+/*# sourceMappingURL=main.css.map */
